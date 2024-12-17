@@ -12,8 +12,9 @@
             <geometry>
                 <box size="0.010 0.03 0.03"/>
             </geometry>
-            <material name="red"/>
+            <material name="black"/>
         </visual>
+        
     </link>
 
 
@@ -48,6 +49,8 @@
             </camera>
             <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
                 <frame_name>camera_link_optical</frame_name>
+                <min_depth>0.1</min_depth>
+                <max_depth>100.0</max_depth>
             </plugin>
         </sensor>
     </gazebo>
