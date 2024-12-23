@@ -1,7 +1,7 @@
 controller_manager:
   ros__parameters:
     update_rate: 30
-    use_sim_time: true
+    # use_sim_time: true
 
     diff_cont:
       type: diff_drive_controller/DiffDriveController
@@ -11,15 +11,16 @@ controller_manager:
 
 diff_cont:
   ros__parameters:
-
-    publish_rate: 50.0
-
+    enable_odom_tf: true  # Bu parametre odometri dönüşümünü etkinleştirir
+    odom_frame_id: odom   # Odometri dönüşümü için kullanılan çerçeve
     base_frame_id: base_link
+    publish_rate: 50
+
 
     left_wheel_names: ['left_wheel_joint']
     right_wheel_names: ['right_wheel_joint']
-    wheel_separation: 0.35
-    wheel_radius: 0.05
+    wheel_separation: 0.188
+    wheel_radius: 0.0405
 
     use_stamped_vel: false
 
