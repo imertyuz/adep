@@ -24,13 +24,19 @@ diff_cont:
     
     use_stamped_vel: false
 
+    ## sag-sol donuslerdeki hata icin Chatgpt cozum onerisi
+    wheel_separation_multiplier: -1.0  # Bunu ekleyin
+    left_wheel_radius_multiplier: 1.0
+    right_wheel_radius_multiplier: 1.0
+    ##
+
     # open_loop: false    
 
     # wheels_per_side: x
     # wheel_separation_multiplier: x
     # left_wheel_radius_multiplier: x
     # right_wheel_radius_multiplier: x
-ss
+
     # odom_frame_id: x
     # pose_covariance_diagonal: x
     # twist_covariance_diagonal: x
